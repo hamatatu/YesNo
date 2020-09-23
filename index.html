@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>チャート</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer>
+  </script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1></h1>
+  </header>
+  <main>
+    <section class="chart">
+      <h2>YesかNoで答えろッッ！</h2>
+
+      <!-- question -->
+      <div id="q_01" class="positionFit">
+        <h3>覚悟はいいか？</h3>
+        <ul>
+          <li class="even"><a href="#a_01" class="btn">Yes</a></li>
+          <li class="odd"><a href="#a_02" class="btn">No</a></li>
+        </ul>
+      </div>
+
+      <div id="q_02" class="positionFit" style="display: none;">
+        <h3>オラオラですか？</h3>
+        <ul>
+          <li class="even"><a href="#q_03" class="btn">Yes</a></li>
+          <li class="odd"><a href="#a_02" class="btn">No</a></li>
+        </ul>
+      </div>
+
+      <div id="q_03" class="positionFit" style="display: none;">
+        <h3>やれやれだぜ。。。</h3>
+        <p class="product">この商品をお勧めするぜ</p>
+        <ul>
+          <li class="back"><a class="back-btn" href="#q_01">最初に戻る</a></li>
+        </ul>
+      </div>
+
+      <!-- answer -->
+      <div id="a_01" style="display: none;">
+        <div class="center">
+          <p class="answer-words">俺はできている！</p>
+        </div>
+        <ul>
+          <li class="even"><a href="#q_02" class="btn">Yes</a></li>
+          <li class="odd"><a href="#a_02" class="btn">No</a></li>
+        </ul>
+      </div>
+
+      <div id="a_02" style="display: none;">
+        <div class="center">
+          <p class="answer-words">この味は！...ウソをついてる『味』だぜ！！</p>
+        </div>
+        <ul>
+          <li class="back"><a class="back-btn" href="#q_01">最初に戻る</a></li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body,
+h1,
+h2,
+h3,
+p,
+div,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 80px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.chart {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h2 {
+  font-size: clamp(20px, 16px+3vw, 32px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.center {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 200px;
+}
+
+.positionFit ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.answer-words {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn {
+  color: #000;
+  font-size: 20px;
+  padding: 100px;
+  border: solid 2px #000;
+}
+
+.product {
+  text-align: center;
+}
