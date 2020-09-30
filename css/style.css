@@ -39,15 +39,17 @@ h2 {
   text-align: center;
 }
 
+.question-title {
+  margin-bottom: 20px;
+}
+
 h3 {
   text-align: center;
-  margin-bottom: 200px;
 }
 
 .center {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 200px;
 }
 
 .positionFit ul {
@@ -64,7 +66,6 @@ h3 {
 .btn {
   color: #000;
   font-size: 20px;
-  padding: 100px;
   border: solid 2px #000;
 }
 

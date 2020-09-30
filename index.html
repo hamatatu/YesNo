@@ -12,58 +12,88 @@
 </head>
 
 <body>
-  <header>
-    <h1></h1>
-  </header>
   <main>
     <section class="chart">
-      <h2>YesかNoで答えろッッ！</h2>
+      <h2 class="cahrt-title">YesかNoで答えろッッ！</h2>
 
       <!-- question -->
       <div id="q_01" class="positionFit">
-        <h3>覚悟はいいか？</h3>
+        <h3 class="question-title">お肌の弾力を感じにくくなってきた</h3>
         <ul>
-          <li class="even"><a href="#a_01" class="btn">Yes</a></li>
-          <li class="odd"><a href="#a_02" class="btn">No</a></li>
+          <li class="yes"><a href="#q_02" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#q_04" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
 
-      <div id="q_02" class="positionFit" style="display: none;">
-        <h3>オラオラですか？</h3>
+      <div id="q_02" style="display: none;">
+        <h3 class="question-title">お肌の乾燥が気になる</h3>
         <ul>
-          <li class="even"><a href="#q_03" class="btn">Yes</a></li>
-          <li class="odd"><a href="#a_02" class="btn">No</a></li>
+          <li class="yes"><a href="#q_03" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#q_05" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
 
-      <div id="q_03" class="positionFit" style="display: none;">
-        <h3>やれやれだぜ。。。</h3>
-        <p class="product">この商品をお勧めするぜ</p>
+      <div id="q_03" style="display: none;">
+        <h3 class="question-title">肌のゴワつきを感じる時がある</h3>
         <ul>
-          <li class="back"><a class="back-btn" href="#q_01">最初に戻る</a></li>
+          <li class="yes"><a href="#a_01" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#a_02" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
+
+      <div id="q_04" style="display: none;">
+        <h3 class="question-title">肌のツッパリが気になる</h3>
+        <ul>
+          <li class="yes"><a href="#q_03" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#q_06" class="btn">少し当てはまる</a></li>
+        </ul>
+      </div>
+
+      <div id="q_05" style="display: none;">
+        <h3 class="question-title">肌がガサガサする</h3>
+        <ul>
+          <li class="yes"><a href="#a_01" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#a_03" class="btn">少し当てはまる</a></li>
+        </ul>
+      </div>
+
+      <div id="q_06" style="display: none;">
+        <h3 class="question-title">肌触りがザラザラとしている</h3>
+        <ul>
+          <li class="yes"><a href="#a_02" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#a_04" class="btn">少し当てはまる</a></li>
+        </ul>
+      </div>
+
 
       <!-- answer -->
       <div id="a_01" style="display: none;">
-        <div class="center">
-          <p class="answer-words">俺はできている！</p>
-        </div>
+        <h3 class="answer-title">AAA/ABA/BAA</h3>
         <ul>
-          <li class="even"><a href="#q_02" class="btn">Yes</a></li>
-          <li class="odd"><a href="#a_02" class="btn">No</a></li>
+          <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
         </ul>
       </div>
 
       <div id="a_02" style="display: none;">
-        <div class="center">
-          <p class="answer-words">この味は！...ウソをついてる『味』だぜ！！</p>
-        </div>
+        <h3 class="answer-title">AAB/BAB/BCB</h3>
         <ul>
-          <li class="back"><a class="back-btn" href="#q_01">最初に戻る</a></li>
+          <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
         </ul>
       </div>
 
+      <div id="a_03" style="display: none;">
+        <h3 class="answer-title">ABC</h3>
+        <ul>
+          <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
+        </ul>
+      </div>
+
+      <div id="a_04" style="display: none;">
+        <h3 class="answer-title">BCD</h3>
+        <ul>
+          <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
+        </ul>
+      </div>
     </section>
   </main>
 </body>
