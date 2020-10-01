@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if(entry.isIntersecting) {
         /* 監視対象が画面内に入ったときのアクション */
         entry.target.classList.add('inview'); // 画面内に入った要素にinviewクラスを付与
-        observer.unobserve(entry.target); // 1度発火した後監視を止める
+      } else {
+        entry.target.classList.remove('inview');
+        //observer.unobserve(entry.target); // 1度発火した後監視を止める
       }
-
     });
   }
   
