@@ -19,42 +19,98 @@ a {
   text-decoration: none;
 }
 
-header {
-  height: 80px;
-}
-
-header h1 {
-  text-align: center;
-}
-
 .chart {
-  max-width: 960px;
+  max-width: 380px;
   margin: 0 auto;
   position: relative;
-}
-
-h2 {
-  font-size: clamp(20px, 16px+3vw, 32px);
-  margin-bottom: 40px;
   text-align: center;
+  background-color: #fff;
+  padding-bottom: 42px;
 }
 
-.question-title {
+.chart-title {
   margin-bottom: 20px;
 }
 
-h3 {
-  text-align: center;
-}
-
-.center {
-  text-align: center;
-  font-size: 24px;
-}
-
- .choice {
+.circle {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 5px;
+}
+
+.border-line {
+  width: 1px;
+  height: 50px;
+  background-color: red;
+}
+
+.question-title {
+  margin-bottom: 28px;
+  text-align: 24px;
+  font-size: clamp(20px, 16px+3vw, 32px);
+  /*background: linear-gradient(transparent 60%, #ffff66 60%);*/
+}
+
+.js-marker {
+  background-image: linear-gradient(90deg, #ffff66, #ffff66); /* 単色の場合は同じ色、グラデーションさせる場合は別々の色 */
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0 40%; /* '30%'の部分にマーカーの太さを記入 */
+  transition: all 1s ease-in-out; /* マーカーを引く速度を調整 */
+}
+
+.js-marker.inview {
+  background-size: 100% 40%;
+}
+
+.question-mark__color {
+  color: #e51919;
+}
+
+.yes,
+.no {
+  width: 260px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+}
+
+.yes a,
+.no a {
+  display: block;
+}
+
+.yes {
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.yes:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+
+.no {
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.no:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
 }
 
 .answer-words {
@@ -64,11 +120,14 @@ h3 {
 }
 
 .btn {
-  color: #000;
+  color: #fff;
   font-size: 20px;
-  border: solid 2px #000;
+  padding: 14px;
 }
 
-.product {
-  text-align: center;
+
+.no-btn {
+  margin-left: 20px;
 }
+
+
