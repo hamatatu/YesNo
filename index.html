@@ -14,12 +14,12 @@
 <body>
   <main>
     <section class="chart">
-      <h2 class="cahrt-title">YesかNoで答えろッッ！</h2>
+      <h2 class="cahrt-title">質問</h2>
 
       <!-- question -->
-      <div id="q_01" class="positionFit">
+      <div id="q_01">
         <h3 class="question-title">お肌の弾力を感じにくくなってきた</h3>
-        <ul>
+        <ul class="choice">
           <li class="yes"><a href="#q_02" class="btn">とても当てあはまる</a></li>
           <li class="no"><a href="#q_04" class="btn">少し当てはまる</a></li>
         </ul>
@@ -27,7 +27,7 @@
 
       <div id="q_02" style="display: none;">
         <h3 class="question-title">お肌の乾燥が気になる</h3>
-        <ul>
+        <ul class="choice">
           <li class="yes"><a href="#q_03" class="btn">とても当てあはまる</a></li>
           <li class="no"><a href="#q_05" class="btn">少し当てはまる</a></li>
         </ul>
@@ -35,62 +35,76 @@
 
       <div id="q_03" style="display: none;">
         <h3 class="question-title">肌のゴワつきを感じる時がある</h3>
-        <ul>
+        <ul class="choice">
           <li class="yes"><a href="#a_01" class="btn">とても当てあはまる</a></li>
+          <li class="no"><a href="#a_02" class="btn">少し当てはまる</a></li>
+        </ul>
+      </div>
+
+      <div id="q_03-2" style="display: none;">
+        <h3 class="question-title">肌のゴワつきを感じる時がある</h3>
+        <ul class="choice">
+          <li class="yes"><a href="#a_01-2" class="btn">とても当てあはまる</a></li>
           <li class="no"><a href="#a_02" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
 
       <div id="q_04" style="display: none;">
         <h3 class="question-title">肌のツッパリが気になる</h3>
-        <ul>
-          <li class="yes"><a href="#q_03" class="btn">とても当てあはまる</a></li>
+        <ul class="choice">
+          <li class="yes"><a href="#q_03-2" class="btn">とても当てあはまる</a></li>
           <li class="no"><a href="#q_06" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
 
       <div id="q_05" style="display: none;">
         <h3 class="question-title">肌がガサガサする</h3>
-        <ul>
-          <li class="yes"><a href="#a_01" class="btn">とても当てあはまる</a></li>
+        <ul class="choice">
+          <li class="yes"><a href="#a_01-2" class="btn">とても当てあはまる</a></li>
           <li class="no"><a href="#a_03" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
 
       <div id="q_06" style="display: none;">
         <h3 class="question-title">肌触りがザラザラとしている</h3>
-        <ul>
+        <ul class="choice">
           <li class="yes"><a href="#a_02" class="btn">とても当てあはまる</a></li>
           <li class="no"><a href="#a_04" class="btn">少し当てはまる</a></li>
         </ul>
       </div>
 
-
       <!-- answer -->
       <div id="a_01" style="display: none;">
-        <h3 class="answer-title">AAA/ABA/BAA</h3>
-        <ul>
+        <h3 class="answer-title">AAA</h3>
+        <ul class="choice">
+          <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
+        </ul>
+      </div>
+
+      <div id="a_01-2" style="display: none;">
+        <h3 class="answer-title">ABA/BAA</h3>
+        <ul class="choice">
           <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
         </ul>
       </div>
 
       <div id="a_02" style="display: none;">
         <h3 class="answer-title">AAB/BAB/BCB</h3>
-        <ul>
+        <ul class="choice">
           <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
         </ul>
       </div>
 
       <div id="a_03" style="display: none;">
         <h3 class="answer-title">ABC</h3>
-        <ul>
+        <ul class="choice">
           <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
         </ul>
       </div>
 
       <div id="a_04" style="display: none;">
         <h3 class="answer-title">BCD</h3>
-        <ul>
+        <ul class="choice">
           <p class="back"><a class="back-btn" href="#q_01">最初に戻る</a></p>
         </ul>
       </div>

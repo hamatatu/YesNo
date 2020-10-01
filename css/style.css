@@ -52,7 +52,7 @@ h3 {
   font-size: 24px;
 }
 
-.positionFit ul {
+ .choice {
   display: flex;
   justify-content: space-around;
 }
