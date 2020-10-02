@@ -59,7 +59,7 @@ a {
   margin-bottom: 28px;
   text-align: 24px;
   font-size: clamp(20px, 16px+3vw, 32px);
-  /*background: linear-gradient(transparent 60%, #ffff66 60%);*/
+  display: inline-block;
 }
 
 .js-marker {
